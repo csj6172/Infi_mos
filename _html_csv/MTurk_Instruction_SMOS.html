@@ -10,7 +10,7 @@
     <!-- The crowd-classifier element will create a tool for the Worker to select the 
           correct answer to your question -->
     <crowd-classifier 
-        categories="['5 - Completely similar speaker', '4.5', '4 - Mostly similar speaker', '3.5', '3 - Equally similar and dissimilar speaker', '2.5', '2 - Mostly dissimilar speaker', '1.5','1 - Completely dissimilar speaker']"
+        categories="['5 - Completely similar', '4.5', '4 - Mostly similar', '3.5', '3 - Equally similar and dissimilar', '2.5', '2 - Mostly dissimilar', '1.5','1 - Completely dissimilar']"
         header="Listen to the sample of the test audio and assess: How similar is this test audio to the reference audio in terms of speaker? Please focus only on the similarity of the speaker to the reference audio. And disregard the differences of content, prosody, and quality of voices"
         name="SMOS">
         
@@ -39,16 +39,17 @@
               any HTML here. -->
         <short-instructions>             
             <p>
-                In this test, you'll listen to both a reference voice sample and the voice sample for evaluation.
+              <strong>Please read all of the instructions carefully.</strong><br><br>
+                In this test, you'll listen to both a reference voice sample and the target voice sample for evaluation.
                 Your task is to assess the similarity between the speakers of these two voice samples.
-                Concentrate solely on determining how closely related the speakers sound, disregarding content, prosody, and quality differences between the voices.
-                A score closer to 5 suggests a higher similarity in speaker identity between the two voices.<br><br>
+                Concentrate solely on determining how closely related the speakers sound, disregarding content, prosody (the natural pattern of rhythm and intonation of the speech), and quality (the absence or existence of sound distortions) differences between the voices.
+                A score closer to 5 suggests a higher similarity in whether the two voices belong to the same speaker.<br><br>
             </p>
-            <strong>Note1: </strong>It is imperative that we ask you to please listen to the audio recordings in its entirety when rating it.<br>
-            <strong>Note2: </strong>In order to distinguish any instances of cheating, we have inserted a few extremely abnormal sounds among the audio recordings. If you are not able to accurately assign 1 point ratings to these instances, your ratings may be entirely rejected.<br>
-            <strong>Note3: </strong>It's highly recommended to wear headphones or a headset and to be in a quiet environment for precise assessment.<br>
-            <strong>Note4: </strong>Among the samples we have prepared, there may be a Korean reference audio for cross-lingual task. Please do not mind the language and only evaluate it according to the given instructions.<br>
-            <strong>Note5: </strong>If you need example for scoring, please see below "More instructions" tab.
+            <li>It is imperative that we ask you to please listen to the audio recordings in its entirety when rating it.</li><br>
+            <li>In order to distinguish any instances of cheating, we have inserted a few extremely abnormal sounds among the audio recordings. If you are not able to accurately assign 1 point ratings to these instances, your ratings may be entirely rejected.</li><br>
+            <li>It's highly recommended to wear headphones or a headset and to be in a quiet environment for precise assessment.</li><br>
+            <li>Among the samples we have prepared, there may be a Korean reference audio for cross-lingual tasks. Please do not mind the language differences and only evaluate it according to the given instructions.</li><br>
+            <li>If you need an example for scoring, please see the "More instructions" tab below.</li>
         </short-instructions>
 
         <!-- Use the full-instructions section for more detailed instructions that the 
@@ -58,8 +59,8 @@
               <full-instructions>
                 <body>
                 <pre>
-                Thank you for joining an our survey.<br>
-                For detailed description per score, check below a table.<br>
+                Thank you for joining our survey!<br>
+                For a detailed description for what each score should indicate, please check the table below.<br>
                 </pre>
                 <style type="text/css">
                 .tg  {border-collapse:collapse;border-spacing:0;}

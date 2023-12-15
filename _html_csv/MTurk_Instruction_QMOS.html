@@ -10,8 +10,8 @@
     <!-- The crowd-classifier element will create a tool for the Worker to select the 
           correct answer to your question -->
     <crowd-classifier 
-        categories="['5 - Completely natrual speech', '4.5', '4 - Mostly natural speech', '3.5', '3 - Equally natural and unnatural speech', '2.5', '2 - Mostly unnatural speech', '1.5','1 - Completely unnatural speech']"
-        header="Listen to the sample of the test audio and assess the quality of the audio based on how close it is to natural speech."
+        categories="['5 - Completely natural speech', '4.5', '4 - Mostly natural speech', '3.5', '3 - Equally natural and unnatural speech', '2.5', '2 - Mostly unnatural speech', '1.5','1 - Completely unnatural speech']"
+        header="Listen to the sample of the test audio and assess the quality (the absence or existence of sound distortions) of the audio based on how close it is to natural speech."
         name="QMOS">
         
             <classification-target>
@@ -33,14 +33,15 @@
               any HTML here. -->
         <short-instructions>             
             <p>
-                In this test, you'll listen to voice samples and rate the quality on a scale of 1 to 5.
-                A score closer to 5 implies higher quality of the voice.
-                Please consider the naturalness of speech, pronunciation accuracy, and overall sound quality when assigning your rating.<br><br>
+                <strong>Please read all of the instructions carefully.</strong><br><br>
+                In this test, you'll listen to voice samples and rate the quality on a scale of 1 to 5.<br>
+                Please consider the naturalness of speech, accuracy of pronunciation, and overall sound quality (the absence or existence of sound distortions) when assigning your rating.<br><br>
+                A score closer to 5 implies a higher quality of the voice.<br>
             </p>
-            <strong>Note1: </strong>It is imperative that we ask you to please listen to the audio recordings in its entirety when rating it.<br>
-            <strong>Note2: </strong>In order to distinguish any instances of cheating, we have inserted a few extremely abnormal sounds among the audio recordings. If you are not able to accurately assign 1 point ratings to these instances, your ratings may be entirely rejected.<br>
-            <strong>Note3: </strong>It's highly recommended to wear headphones or a headset and to be in a quiet environment for precise assessment.<br>
-            <strong>Note4: </strong>If you need example for scoring, please see below "More instructions" tab.
+            <li>It is imperative that we ask you to please listen to the audio recordings in its entirety when rating it.</li><br>
+            <li>In order to distinguish any instances of cheating, we have inserted a few extremely abnormal sounds among the audio recordings. If you are not able to accurately assign 1 point ratings to these instances, your ratings may be entirely rejected.</li><br>
+            <li>It's highly recommended to wear headphones or a headset and to be in a quiet environment for precise assessment.</li><br>
+            <li>If you need an example for scoring, please see the "More instructions" tab below.</li>
         </short-instructions>
 
         <!-- Use the full-instructions section for more detailed instructions that the 
@@ -50,8 +51,8 @@
               <full-instructions>
                 <body>
                 <pre>
-                Thank you for joining an our survey.<br>
-                For detailed description per score, check below a table.<br>
+                Thank you for joining our survey!<br>
+                For a detailed description for what each score should indicate, please check the table below.<br>
                 </pre>
                 <style type="text/css">
                 .tg  {border-collapse:collapse;border-spacing:0;}
